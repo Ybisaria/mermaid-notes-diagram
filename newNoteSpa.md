@@ -10,6 +10,7 @@ sequenceDiagram
   server-->>browser: { "message": "note created" }
   deactivate server
 
-  Note right of browser: The browser does not reload the page.<br/>
-  The JavaScript code already running in the browser updates the note list locally using the data from the server and the new note.
+  Note right of browser:
+    The browser does not reload the page.
+    The JavaScript code already running in the browser updates the note list locally using the data from the server and the new note.
 ```
