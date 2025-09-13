@@ -1,7 +1,7 @@
 ```mermaid
 sequenceDiagram
   participant browser
-  articipant server
+  participant server
 
   browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
   activate server
@@ -11,15 +11,15 @@ sequenceDiagram
 
   browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
   activate server
-  server-->> browser: HTML Document
+  server-->>browser: HTML Document
   deactivate server
 
-  browser-->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+  browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
   activate server
-  server->>browser: the css file
+  server-->>browser: the css file
   deactivate server
 
-  browser->>server GET https://studies.cs.helsinki.fi/exampleapp/main.js
+  browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
   activate server
   server-->>browser: the js file
   deactivate server
